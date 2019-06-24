@@ -1,0 +1,139 @@
+body {
+    font-weight: normal;
+    font-size: 14px;
+    min-width: 320px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: url("../img/bizbar4.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+}
+header form {
+    padding: 0px 220px 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+header form input {
+    width: 380px;
+    height: 60px;
+}
+header form input::placeholder {
+    font-size: 32px;
+}
+header form p {
+    font-size: 14px;
+    background: #000000;
+    color: #ffce1c;
+    text-align: right;
+    width: 50%;
+}
+.logo {
+    display: flex;
+    padding: 30px 0px;
+}
+.description p {
+    text-align: right;
+    font-size: 15px;
+    border: 1px solid silver;
+    padding: 10px 0px;
+}
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right;
+}
+.blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid red;
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.blocks .kub {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(-45deg);
+    top: -10px;
+    left: 50%;
+}
+.blocks .brudkramps ul {
+    display: flex;
+    padding: 10px 0px;
+}
+.blocks .brudkramps ul li {
+    list-style-type: none;
+}
+.blocks .brudkramps ul li a {
+    color: black;
+    font-weight: bold;
+}
+.some_block .topblock {
+    width: 100%;
+    background-color: #201f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.some_block .topblock a {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #FFF;
+    color: #363636;
+    padding: 0px 0px 5px 0px;
+    text-align: right;
+}
+.some_block .topblock i {
+    color: red;
+    font-size: 33px;
+    padding: 5px;
+}
+.some_block .bottomblock {
+    text-align: right;
+    padding: 20px 0px;
+    border-bottom: 1px dashed silver;
+}
+.some_block .bottomblock a {
+    font-size: 18px;
+    color: black;
+    text-align: right;
+}
+.some_block .bottomblock .last-link {
+    padding: 10px 0px;
+}
+.some_block .bottomblock .last-link a {
+    font-size: 16px;
+    color: silver;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    header form input {
+        width: 70%;
+    }
+    header form {
+        padding: 0px;
+    }
+    header form input::placeholder {
+        font-size: 16px;
+    }
+    header form p {
+        width: 85%;
+    }
+    .blocks .brudkramps ul li a {
+        font-size: 13px;
+    }
+}
